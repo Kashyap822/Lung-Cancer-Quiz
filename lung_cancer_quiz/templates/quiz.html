@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+  <form method="post" class="container-sm mt-5">
+    {% if form.errors %}
+        {{ form.errors }}
+    {% endif %}
+    {{form.hidden_tag()}}
+    <div class="mb-3">
+      {{form.gender.label(class="form-label")}}{{form.gender(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.age.label(class="form-label")}}{{form.age(class="form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.smoke.label(class="form-label")}}{{form.smoke(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.fingers.label(class="form-label")}}{{form.fingers(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.anxiety.label(class="form-label")}}{{form.anxiety(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.pressure.label(class="form-label")}}{{form.pressure(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.chronic.label(class="form-label")}}{{form.chronic(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.fatigue.label(class="form-label")}}{{form.fatigue(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.allergies.label(class="form-label")}}{{form.allergies(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.wheezing.label(class="form-label")}}{{form.wheezing(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.alcohol.label(class="form-label")}}{{form.alcohol(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.cough.label(class="form-label")}}{{form.cough(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.breath.label(class="form-label")}}{{form.breath(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.swallowing.label(class="form-label")}}{{form.swallowing(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.chest.label(class="form-label")}}{{form.chest(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.submit(class="btn btn-primary")}}
+    </div>
+  </form>
+{% endblock %}
